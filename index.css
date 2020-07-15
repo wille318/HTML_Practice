@@ -1,5 +1,6 @@
 *:root{
     --naver-color : rgb(90, 196, 95);
+    --basic-background:rgb(245, 246, 247);
 }
 
 body{
@@ -12,13 +13,57 @@ body{
 
 }
 
-.container{q
+.container{
     height: 100vh;
     width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 #naver{
-    color:var(--naver-color) ;
-    font-size : 10vh ;
+    color: var(--naver-color) ;
+    font-size : 7vh ;
     font-weight : 900 ;
+    margin: 8vh;
+    width: 100;
+    text-align: center;
+
+}
+
+#userID, #userPassword{
+    height:100%;
+    width: 90%;
+    margin-left: 10px;
+}
+
+#userID:focus, #userPassword:focus, #userID, #userPassword{
+    border : none;
+}
+
+.userInput{
+    width : 70% ;
+    height: 40px;
+    margin: 5px;
+    padding : 3px ;
+    border: 1px solid var(--naver-color);
+    background-color: white ;
+    display: flex;
+    align-content: center;
+}
+
+#submit{
+    background-color:rgb(90, 196, 95);
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
