@@ -67,3 +67,10 @@ form{
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.option{
+    display: flex;
+    width :75% ;
+    height: 20px;
+    justify-content: space-between;
+}
